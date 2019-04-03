@@ -1,1 +1,128 @@
-hello world.
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audio Samples</title>
+</head>
+
+<body style="text-align: left;">
+<h2 style="text-align: left">Audio Samples from &quot;Boosting Character-Based Chinese Speech Synthesis via Mutli-Task Learning and Dictionary Tutoring&quot;</h2>
+<p style="text-align: left;"><strong>Authors:</strong> Yuxiang Zou, Linhao Dong, Bo Xu</p>
+<p><strong>Abstract: </strong>Recent character-based end-to-end text-to-speech (TTS) systems have shown promising performance in natural speech generation, especially for English. However, for Chinese TTS, the character-based model is easy to generate speech with wrong pronunciation due to the label sparsity issue. To address this issue, we introduce an additional learning task of character-to-pinyin mapping to the TTS task for boosting the pronunciation learning of characters, and leverage a pre-trained dictionary network to correct the pronunciation mistake during joint training. Specifically, our model predicts pinyin labels as an auxiliary task to assist our model in learning better hidden representations of Chinese characters, where pinyin is a unique pronunciation form for each character. The dictionary network plays a role as a tutor to further help hidden representation learning. Experiments demonstrate that employing the pinyin auxiliary task and an external dictionary network clearly enhances the naturalness and intelligibility of the synthetic speech directly from the Chinese character sequences.</p>
+<hr>
+<p>&nbsp;</p>
+<ul>
+  <li>
+    <h3>Demo of different modeling units</h3>
+  </li>
+</ul>
+<table width="60%" border="1">
+  <tbody>
+    <tr>
+      <th width="30%" align="right" style="text-align: center" scope="col"> Model</th>
+      <th colspan="2" style="text-align: center" scope="col">Audio Samples</th>
+    </tr>
+    <tr>
+      <th width="30%" align="right" style="text-align: center" scope="col">Char-based</th>
+      <th width="35%" style="text-align: center" scope="col"><audio controls>
+        <source src="demo/baseline/A_2.wav" type="audio/wav">
+      </audio></th>
+      <th width="35%" style="text-align: center" scope="col"><audio controls>
+        <source src="demo/baseline/A_3.wav" type="audio/wav">
+      </audio></th>
+      <th width="35%" style="text-align: center" scope="col"><audio controls>
+        <source src="demo/baseline/A_4.wav" type="audio/wav">
+      </audio></th>
+    </tr>
+    <tr>
+      <th width="30%" align="right" style="text-align: center" scope="row">Pinyin-based</th>
+      <th width="35%" style="text-align: center"><audio controls>
+        <source src="demo/baseline/B_2.wav" type="audio/wav">
+      </audio></th>
+      <td width="35%" style="text-align: center"><audio controls>
+        <source src="demo/baseline/B_3.wav" type="audio/wav">
+      </audio></td>
+      <th width="35%" style="text-align: center" scope="col"><audio controls>
+        <source src="demo/baseline/B_4.wav" type="audio/wav">
+      </audio></th>
+    </tr>
+    <tr>
+      <th width="30%" align="right" style="text-align: center" scope="row">Phone-based</th>
+      <th width="35%" style="text-align: center"><audio controls>
+        <source src="demo/baseline/C_2.wav" type="audio/wav">
+      </audio></th>
+      <td width="35%" style="text-align: center"><audio controls>
+        <source src="demo/baseline/C_3.wav" type="audio/wav">
+      </audio></td>
+      <th width="35%" style="text-align: center" scope="col"><audio controls>
+        <source src="demo/baseline/C_4.wav" type="audio/wav">
+      </audio></th>
+    </tr>
+  </tbody>
+</table>
+<ul>
+  <li>
+    <h3>Speed Control Demo</h3>
+  </li>
+</ul>
+<span style="text-align: center" width="170" nowrap="nowrap" scope="col"></span><span style="text-align: center" width="170" nowrap="nowrap" scope="col"></span>
+<table width="60%" border="1">
+  <tbody>
+    <tr>
+      <th width="30%" nowrap style="text-align: center" scope="col">Added Bias Value</th>
+      <th colspan="2" style="text-align: center; width: 80%;" scope="col">Audio Samples</th>
+    </tr>
+    <tr>
+      <th width="20%" nowrap style="text-align: center" scope="row">-1.2</th>
+      <th width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s_12/00000440_gen.wav" type="audio/wav">
+      </audio></th>
+      <td width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s_12/00013358_gen.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+    <tr>
+      <th width="20%" nowrap style="text-align: center" scope="row">-0.6</th>
+      <th width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s_6/00000440_gen.wav" type="audio/wav">
+      </audio></th>
+      <td width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s_6/00013358_gen.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+    <tr>
+      <th width="20%" nowrap style="text-align: center" scope="row">0.0</th>
+      <th width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s0/00000440_gen.wav" type="audio/wav">
+      </audio></th>
+      <td width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s0/00013358_gen.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+    <tr>
+      <th width="20%" nowrap style="text-align: center" scope="row">0.6</th>
+      <th width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s6/00000440_gen.wav" type="audio/wav">
+      </audio></th>
+      <td width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s6/00013358_gen.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+    <tr>
+      <th width="20%" nowrap style="text-align: center" scope="row">1.2</th>
+      <th width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s12/00000440_gen.wav" type="audio/wav">
+      </audio></th>
+      <td width="35%" style="text-align: center"><audio controls>
+        <source src="speedcontrol/s12/00013358_gen.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
+
